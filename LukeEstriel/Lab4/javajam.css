@@ -1,0 +1,160 @@
+*{ 
+    box-sizing: border-box;
+}
+
+main{
+    padding-left:0;
+    padding-right: 0;
+    margin-left: 200px;
+    padding-top:0;
+    background-color: #FEF6C2;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+body{
+    background-image: url("./images/windingroad.jpg");
+
+    background-color: #D2B48C;
+    background-attachment: fixed;
+    background-size: cover;
+    text-emphasis-color: #221811;
+    font-family: Arial, sans-serif, Tahoma;
+    background-repeat: no-repeat;
+}
+header{
+    background-image: url("./images/coffeelogo.jpg");
+    background-repeat: no-repeat;
+    background-color: #D2B48C;
+    color:#231814;
+    padding-left: 240px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h1{
+    font-size: 3em;
+}
+
+h1 a{
+    text-decoration: none;
+    color:#221811;
+}
+h2{
+    color: #8C3826;
+}
+h3{
+    color:#8C3826;
+}
+h4{
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom:.25em;
+    text-transform: uppercase;
+    border-bottom: 5px solid black; /*might be wrong???*/
+    padding-bottom: 0;
+}
+.dt{
+    color:#8C3826;
+}
+.details{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+.floatleft{
+    padding-left: 2em;
+    padding-right:2em;
+    float:left;
+}
+
+.heroguitar{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/heroguitar.jpg");
+    background-repeat: no-repeat;
+}
+
+.homehero{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/heroroad.jpg");
+    background-repeat: no-repeat;
+ 
+}
+
+.heromugs{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/heromugs.jpg");
+    background-repeat: no-repeat;
+}
+
+img{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+nav{
+    float:left;
+    width:200px;
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration:none;
+
+}
+nav a:hover{
+    color:#CC9933;
+}
+nav a:link{
+    color:#FEF6C2;
+}
+nav a:visited{
+    color:#D2B48C;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+} 
+
+
+.onethird{
+    float:left;
+    width:33%;
+}
+
+footer{
+    border: solid #8C3826;
+    border-top: 0 2px;
+    background-color: #D2B48C;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding:1em;
+    
+}
+.wrapper{
+    background-color: #231814;
+    width:80%;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 10px 5px 5px #221811;
+    padding:0;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
