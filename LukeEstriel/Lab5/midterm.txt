@@ -1,0 +1,157 @@
+  <!--HEADER-->
+   <header>
+        <div class="wrapper-header">
+            <div>
+                <a href="index.html">
+                    <div class="logo">
+                        GREEN
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul>About</ul>
+                <ul>Portfolio</ul>
+                <ul>Features</ul>
+                <ul>Pricing</ul>
+                <ul>Contact</ul>
+            </nav>
+        </div>
+   </header>
+    <!--BANNER-->
+   <div class="banner">
+        <div class="banner-content">
+            text for banner
+            <button>call to action button</button>
+        </div>
+   </div>
+    <!--SECTION-->
+   <section>
+
+   </section>
+    <!--FOOTER-->
+   <footer>
+    Copyright © 2024 Midterm. Cole Yamamura All Rights Reserved.<br>
+
+
+   </footer>
+
+
+
+
+
+
+
+   <div class="img-left">
+                <img src="./images/2.png"/>
+            </div>
+
+            <div class="content-right">
+                <b>Our Sustainable Journey</b><br>
+                Addressing climate change seems daunting, yet our collective choices have profound impacts. 
+                The balance between natural ecosystems and urban development is delicate. Factors like 
+                carbon emissions, deforestation, and pollution contribute significantly to global warming. 
+                Adopting renewable energy sources, such as solar or wind, is crucial in mitigating these 
+                effects. Lifestyle changes, from reducing waste to conserving water, play a pivotal role. 
+                If considering environmental policies, it's essential to prioritize sustainable practices. 
+                Public awareness and education can lead to actionable change, much like the respect shown 
+                for historical conservation efforts. The challenge is complex, but through informed 
+                decisions and community action, we can aim to restore ecological harmony and ensure a 
+                healthier planet for future generations.
+                <br>
+                <button>GET STARTED</button>
+            </div>
+
+
+
+            
+
+/*set one*/
+.twocolumns-setone{
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 60% 30%; 
+}
+
+.twocolumns-setone .content-left{
+    text-align: left;
+    width: 60%;
+}
+.twocolumns-setone .img-right{
+    justify-content: center;
+    width: 100%;
+}
+.twocolumns-setone .img-right img{
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+/*set two*/
+.twocolumns-settwo{
+    padding-left: 10%;
+    display: grid;
+    grid-template-columns: 30% 60%; 
+}
+
+.twocolumns-settwo .content-right{
+    padding-left: 100px;
+    text-align: left;
+    width: 60%;
+}
+.twocolumns-settwo .img-left{
+    justify-content: center;
+    width: 100%;
+}
+.twocolumns-settwo .img-left img{
+    justify-content: center;
+    width: 100%;
+}
+
+
+  <div class="twocolumns-setone">
+            <div class="content-left">
+                <h3>Understanding Climate Change</h3>
+                    <p>Addressing climate change seems daunting, yet our collective choices have profound impacts. 
+                        The balance between natural ecosystems and urban development is delicate. Factors like 
+                        carbon emissions, deforestation, and pollution contribute significantly to global warming. 
+                        Adopting renewable energy sources, such as solar or wind, is crucial in mitigating these 
+                        effects. Lifestyle changes, from reducing waste to conserving water, play a pivotal role. 
+                        If considering environmental policies, it's essential to prioritize sustainable practices. 
+                        Public awareness and education can lead to actionable change, much like the respect shown 
+                        for historical conservation efforts. The challenge is complex, but through informed 
+                        decisions and community action, we can aim to restore ecological harmony and ensure a 
+                        healthier planet for future generations.</p>
+                        <br>
+                        <button>GET STARTED</button>
+            </div>
+            <div class="img-right">
+                <img src="./images/1.png"/>
+            </div>
+        </div>
+        
+
+        <div class="twocolumns-settwo">
+            
+            <div class="img-left">
+                <img src="./images/2.png"/>
+            </div>
+
+            <div class="content-right">
+                <h3>Our Sustainable Journey</h3>
+                    <p>Addressing climate change seems daunting, yet our collective choices have profound impacts. 
+                        The balance between natural ecosystems and urban development is delicate. Factors like 
+                        carbon emissions, deforestation, and pollution contribute significantly to global warming. 
+                        Adopting renewable energy sources, such as solar or wind, is crucial in mitigating these 
+                        effects. Lifestyle changes, from reducing waste to conserving water, play a pivotal role. 
+                        If considering environmental policies, it's essential to prioritize sustainable practices. 
+                        Public awareness and education can lead to actionable change, much like the respect shown 
+                        for historical conservation efforts. The challenge is complex, but through informed 
+                        decisions and community action, we can aim to restore ecological harmony and ensure a 
+                        healthier planet for future generations.</p>
+                        <br>
+                        <button>GET STARTED</button>
+            </div>
+          
+            
+        </div>
