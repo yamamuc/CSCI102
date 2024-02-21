@@ -1,0 +1,242 @@
+*{ 
+    box-sizing: border-box;
+}
+
+main{
+    padding-left:0;
+    padding-right: 0;
+    padding-top:0;
+    background-color: #FEF6C2;
+    padding-bottom: 2em;
+}
+
+main h2, main h3, main h4, main p, main div, main dl{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+main ul{
+    padding-left: 2em;
+}
+
+body{
+    background-color: #D2B48C;
+    margin:0;
+    text-emphasis-color: #221811;
+    font-family: Arial, sans-serif, Tahoma;
+    background-repeat: no-repeat;
+}
+header{
+    background-image: url("./images/cup.jpg");
+    background-repeat: no-repeat;
+    background-color: #D2B48C;
+    color:#231814;
+    padding-left: 105px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height:128px;
+}
+h1{
+    font-size: 2em;
+}
+
+h1 a{
+    text-decoration: none;
+    color:#221811;
+}
+h2{
+    color: #8C3826;
+}
+h3{
+    color:#8C3826;
+}
+h4{
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom:.25em;
+    text-transform: uppercase;
+    border-bottom: 5px solid black; /*might be wrong???*/
+    padding-bottom: 0;
+}
+.dt{
+    color:#8C3826;
+}
+.details{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+#heroguitar{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/guitar.jpg");
+    background-repeat: no-repeat;
+}
+
+#homehero{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/road.jpg");
+    background-repeat: no-repeat;
+ 
+}
+
+#heromugs{
+    height:300px;
+    background-size: 100% 100%;
+    background-image: url("./images/threemugs.jpg");
+    background-repeat: no-repeat;
+}
+
+img{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#desktop{
+    display: none;
+}
+
+#mobile{
+    display: inline;
+}
+
+nav{
+
+    font-size: 1.5em;
+ 
+    text-align: center;
+ 
+}
+
+nav a{
+    text-decoration:none;
+
+}
+nav a:hover{
+    color:#CC9933;
+}
+nav a:link{
+    color:#FEF6C2;
+}
+nav a:visited{
+    color:#D2B48C;
+}
+
+nav ul{
+    flex-direction: column;
+    /*list-style: none;*/
+    margin:0;
+    padding: 0;
+    font-size: 1.25em;
+} 
+
+nav li{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width:100%;
+    border-bottom: 1px solid;
+}
+
+
+
+footer{
+    border: solid #8C3826;
+    border-top: 0 2px;
+    background-color: #D2B48C;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding:1em;
+    
+}
+#wrapper{
+    background-color: #231814;
+    padding:0;
+
+}
+
+/*MEDIUM*/
+@media (min-width:600px) {
+    header{
+        text-align: center;
+        padding-left: 0;
+    }
+    h1{
+        font-size:3em;
+    }
+    nav ul{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        
+    }
+    nav li{
+        border-bottom: none;
+        display: inline;
+
+    }
+/*         is this right?*/
+
+    #homehero{
+        height:50vh;
+        background-image: url("./images/heromugs.jpg");
+    }
+    #homemugs{
+        background-image: url("./images/heromugs.jpg");
+    }
+    #heroguitar{
+        background-image: url("./images/heroguitar.jpg");
+    }
+    #flow{
+        /*flex container?*/
+        flex-direction: row;
+    }
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display:inline;
+    }
+    .details{
+        /*flex container?*/
+        flex-direction: row;
+    }
+    h4{
+        margin-left:10%;
+        margin-right:10%;
+    }
+
+}
+
+/*LARGE*/
+@media (min-width:1024px){
+    header{
+        grid-area:header;
+        background-image: url("./images/coffeelogo.jpg");
+    }
+    nav{
+        grid-area: nav;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        display: flex;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    #wrapper{
+        display: grid;
+        grid-template: "header header" "nav main" "footer footer" / 200px;
+    }
+}
