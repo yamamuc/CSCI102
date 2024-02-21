@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*SMALL*/
 main{
     padding-left:0;
     padding-right: 0;
@@ -185,9 +186,9 @@ footer{
 
     #homehero{
         height:50vh;
-        background-image: url("./images/heromugs.jpg");
+        background-image: url("./images/hero.jpg");
     }
-    #homemugs{
+    #heromugs{
         background-image: url("./images/heromugs.jpg");
     }
     #heroguitar{
