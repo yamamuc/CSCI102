@@ -1,3 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:wght@300;700');
+
+
+*{ 
+    box-sizing: border-box;
+}
+
 body{
-    color: red;
+    background-color: #555555;
+    color: #221811;
+    font-family: Arial, sans-serif, Tahoma;
+}
+header{
+    background-color: #0000bb;
+    color: white;
+    text-align: center;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-shadow: black 3px 3px;
+    border-radius: 10px;
+}
+
+
+nav{
+    background-color: #0000ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: black 3px 3px;
+    border-radius: 10px;
+}
+
+a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+   
+}
+
+.banner{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #777777;
+    color:black;
+    border-radius: 10px;
+}
+
+table{
+    border: 1px solid;
+    width: 750px;
+}
+
+:first-of-type td{
+    text-align: center;
+}
+
+th{
+    border: 1px solid;
+    text-align: center;
+}
+
+td{
+    border: 1px solid;
+
+}
+
+.threecolumns{
+    padding-top: 10px;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+
+
+.onecolumn{
+    color:black;
+    border-radius: 10px;
+    background-color: #777777;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 25px;
+  
+}
+
+img{
+    justify-content: center;
 }
