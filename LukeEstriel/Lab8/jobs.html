@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="javajam.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+<head>
+<title>JavaJam Coffee Bar Menu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+    <div id="wrapper"><body>
+        <header>
+            <h1><a href="menu.html">JavaJam Coffee Menu</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="menu.html">Menu</a></li> 
+                <li><a href="music.html">Music</a></li> 
+                <li><a href="jobs.html">Jobs</a></li>   
+             </ul>
+        </nav>
+        
+        <main>
+
+            <div id="herojobs"></div>
+                <h2>Jobs at JavaJam</h2>
+                <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+                <form action="https://webdevbasics.net/scripts/javajam8.php">
+                    <label for="myName">Name:</label>
+                    <input type="text" id="myName" name="myName" value="" required>
+                    <label for="myEmail">Email:</label>
+                    <input type="text" id="myEmail" name="myEmail" value="" required>
+                    <label for="myStart">Start Date:</label>
+                    <input type="date" id="myStart" name="myStart" value="" required>
+                    <label for="myExperience">Experience:</label>
+                    <textarea type="text" id="myExperience" name="myExperience" value="" rows="2" cols="20" required></textarea>
+                    <div></div> <input type="submit" id="mySubmit" value="Apply Now">
+                </form>
+            
+            
+        </main>
+        <footer>
+            Copyright © 2018 JavaJam Coffee House 
+            <script>
+                var date = document.lastModified;
+                document.write(date);
+            </script>
+        
+        </footer>
+    </body></div>
+</html>
