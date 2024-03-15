@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #555555;
+    background-color: white;
     color: #221811;
     font-family: Arial, sans-serif, Tahoma;
 }
@@ -23,19 +23,22 @@ header{
 
 
 nav{
-    background-color: #0000ff;
+    background-color: #aaaaaa;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    text-shadow: black 3px 3px;
+    text-shadow: lightslategray 1px 1px;
     border-radius: 10px;
+    justify-content: center;
 }
 
+
+
 a{
-    display: inline;
+    display: flex;
     text-decoration: none;
-    color: white;
-   
+    color: black;
+   justify-content: center;
 }
 
 .banner{
@@ -43,7 +46,7 @@ a{
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #777777;
+    background-color: white;
     color:black;
     border-radius: 10px;
 }
@@ -70,8 +73,8 @@ td{
 .threecolumns{
     padding-top: 10px;
     display:grid;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-between;
+    grid-template-columns: 50%;
+    justify-content: space-evenly;
 }
 
 
@@ -83,9 +86,36 @@ td{
     padding-bottom: 25px;
     text-align: center;
     font-size: 25px;
-  
+    margin-bottom: 10px;
 }
 
 img{
     justify-content: center;
+    width: 100%;
+}
+
+
+/*LARGE*/
+@media (min-width:1024px){
+    nav{
+        background-color: #aaaaaa;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        text-shadow: lightslategray 1px 1px;
+        border-radius: 10px;
+        color:black;
+        
+    }
+    a{
+        display: inline
+    }
+    
+    .threecolumns{
+        padding-top: 10px;
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+
 }

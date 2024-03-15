@@ -67,6 +67,8 @@ h4{
     padding-left: 20%;
     padding-right: 20%;
     overflow: auto;
+    /**/
+    display: flex;
 }
 
 #heroguitar{
@@ -196,6 +198,11 @@ form{
 input, textarea{
     margin-bottom: 0.5em;
 }
+audio{
+    display: block;
+    margin-top:1em;
+}
+
 
 
 /*MEDIUM*/

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+<title>Babel's Library - Builds</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+    <header>Point Buy Calculator</header>
+
+
+
+<!--NAV-->
+    <nav>    
+        <a href="index.html">Home</a> &nbsp;
+        <a href="characters.html">Characters</a> &nbsp;
+        <a href="spells.html">Spells</a> &nbsp;
+        <a href="builds.html">Builds</a> &nbsp;
+        <a href="strategies.html">Strategies</a> &nbsp;
+        <a href="pointbuy.html">Point Buy Calculator</a> &nbsp;
+    </nav>
+<!--BANNER-->
+
+<h1>
+    The spreadsheet below can be used to calculate your ability scores for a pointbuy character. 
+    Do note that a score can only naturally be increased to 15, unless your DM approves otherwise.
+</h1>
+
+<table>
+    <tr>
+        <th>Ability</th>
+        <th>Base Score</th>
+        <th>Modifiers</th>
+        <th>Total Score</th>
+    </tr>
+    <!--STR-->
+    <tr>
+        <th>Strength</th>
+        <th> 8 </th>
+        <th><p id="displaySTR">0</p> <button id="decrementSTR">-</button><button id="incrementSTR">+</button> </th>
+        <th><p id="displayTotalSTR">8</p></th>
+    </tr>
+    <!--DEX-->
+    <tr>
+        <th>Dexterity</th>
+        <th> 8 </th>
+        <th><p id="displayDEX">0</p> <button id="decrementDEX">-</button><button id="incrementDEX">+</button></th>
+        <th><p id="displayTotalDEX">8</p></th>
+    </tr>
+    <!--CON-->
+    <tr>
+        <th>Constitution</th>
+        <th> 8 </th>
+        <th><p id="displayCON">0</p> <button id="decrementCON">-</button><button id="incrementCON">+</button></th>
+        <th><p id="displayTotalCON">8</p></th>
+    </tr>
+    <!--INT-->
+    <tr>
+        <th>Intelligence</th>
+        <th> 8 </th>
+        <th><p id="displayINT">0</p> <button id="decrementINT">-</button><button id="incrementINT">+</button></th>
+        <th><p id="displayTotalINT">8</p></th>
+    </tr>
+    <!--WIS-->
+    <tr>
+        <th>Wisdom</th>
+        <th> 8 </th>
+        <th><p id="displayWIS">0</p> <button id="decrementWIS">-</button><button id="incrementWIS">+</button></th>
+        <th><p id="displayTotalWIS">8</p></th>
+    </tr>
+    <!--CHA-->
+    <tr>
+        <th>Charisma</th>
+        <th> 8 </th>
+        <th><p id="displayCHA">0</p> <button id="decrementCHA">-</button><button id="incrementCHA">+</button></th>
+        <th><p id="displayTotalCHA">8</p></th>
+    </tr>
+   
+</table>
+
+<h2>Total Points Used: <p style="display:inline" id="displayPB">0</p>/27 </h2>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
