@@ -49,6 +49,7 @@ a{
     background-color: white;
     color:black;
     border-radius: 10px;
+    display: block;
 }
 
 table{
@@ -94,6 +95,38 @@ img{
     width: 100%;
 }
 
+footer{
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size:50px;
+}
+
+
+.flexbox{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.flexcolumns{
+    margin-right: 100px;
+}
+
+.flexcolumns img{
+    justify-content: right;
+    display: block;
+    width: 100%;
+}
+
+
+.flexcolumns .flexbelow{
+    width: 90%;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
 
 /*LARGE*/
 @media (min-width:1024px){
