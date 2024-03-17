@@ -22,24 +22,6 @@ header{
 }
 
 
-nav{
-    background-color: #aaaaaa;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    text-shadow: lightslategray 1px 1px;
-    border-radius: 10px;
-    justify-content: center;
-}
-
-
-
-a{
-    display: flex;
-    text-decoration: none;
-    color: black;
-   justify-content: center;
-}
 
 .banner{
     padding-top: 10px;
@@ -74,7 +56,7 @@ td{
 .threecolumns{
     padding-top: 10px;
     display:grid;
-    grid-template-columns: 50%;
+    grid-template-columns: 33% 33% 33%;
     justify-content: space-evenly;
 }
 
@@ -128,27 +110,130 @@ footer{
     margin: 0 auto;
 }
 
-/*LARGE*/
-@media (min-width:1024px){
-    nav{
-        background-color: #aaaaaa;
-        padding-top: 10px;
-        padding-bottom: 10px;
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    padding: 10px 20px;
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu.active {
+    display: flex;
+  }
+  
+  .menu ul, .wide-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .menu ul li, .wide-menu ul li {
+    margin: 0 10px;
+  }
+  
+  .menu ul li a, .wide-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .wide-menu{
+    justify-content: center;
+    text-align: center;
+    position:relative;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+button{
+    display: inline;
+}
+  
+  @media screen and (max-width: 768px) {
+    .navbar{
+        justify-content: left;
         text-align: center;
-        text-shadow: lightslategray 1px 1px;
-        border-radius: 10px;
-        color:black;
-        
     }
-    a{
-        display: inline
+
+    .menu {
+        margin-top:100px;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 10px;
     }
-    
+  
+    .menu-btn {
+      display: block;
+    }
+  
+    .wide-menu {
+      display: none;
+      justify-content: center;
+      text-align: center;
+    }
+
     .threecolumns{
         padding-top: 10px;
         display:grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: space-between;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
     }
 
-}
+  }
+  
+  @media screen and (min-width: 769px) {
+
+    .navbar{
+        justify-content: center;
+        text-align: center;
+    }
+    .menu ul{
+        display: none;
+    }
+
+    .wide-menu {
+      display: flex;
+      justify-content: left;
+        text-align: center;
+        position:relative;
+        white-space: nowrap;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+
+    .bar{
+        display: none;
+    }
+  }
